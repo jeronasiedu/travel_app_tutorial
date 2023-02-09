@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:travel_app/models/recommended_places_model.dart';
+import 'package:travel_app/pages/tourist_details_page.dart';
 
 class RecommendedPlaces extends StatelessWidget {
   const RecommendedPlaces({Key? key}) : super(key: key);
@@ -24,7 +25,15 @@ class RecommendedPlaces extends StatelessWidget {
                 ),
                 child: InkWell(
                   borderRadius: BorderRadius.circular(12),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => TouristDetailsPage(
+                            image: recommendedPlaces[index].image,
+                          ),
+                        ));
+                  },
                   child: Padding(
                     padding: const EdgeInsets.all(10),
                     child: Column(

@@ -55,7 +55,7 @@ class HomePage extends StatelessWidget {
             children: [
               Text(
                 "Recommendation",
-                style: Theme.of(context).textTheme.headline6,
+                style: Theme.of(context).textTheme.titleLarge,
               ),
               TextButton(onPressed: () {}, child: const Text("View All"))
             ],
@@ -68,7 +68,7 @@ class HomePage extends StatelessWidget {
             children: [
               Text(
                 "Nearby From You",
-                style: Theme.of(context).textTheme.headline6,
+                style: Theme.of(context).textTheme.titleLarge,
               ),
               TextButton(onPressed: () {}, child: const Text("View All"))
             ],
