@@ -116,6 +116,7 @@ class TouristDetailsPage extends StatelessWidget {
             ),
             const SizedBox(height: 15),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -133,7 +134,7 @@ class TouristDetailsPage extends StatelessWidget {
                       style: Theme.of(context).textTheme.bodySmall,
                     )
                   ],
-                )
+                ),
               ],
             ),
             const SizedBox(height: 10),
